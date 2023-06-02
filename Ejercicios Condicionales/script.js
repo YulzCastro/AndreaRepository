@@ -190,6 +190,8 @@ if (topping === 'oreo' || topping === 'kitkat' || topping === 'brownie' || toppi
 }
 */
 
+//EJERCICIO 10
+
 /*
 mod = %
 numero%2==0
