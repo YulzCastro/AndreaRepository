@@ -114,7 +114,7 @@ var pokemons =
         'krabby',
         'kingler',
         'voltorb']
-var numberUser = 50
+var numberUser = prompt("Ingrese un número de 1 a 100:")
 console.log(pokemons)
 for (let index = 1; index <= numberUser; index++) {
     if(index % 5 == 0) {
