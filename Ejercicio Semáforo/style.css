@@ -1,0 +1,10 @@
+body {
+    background-image: url(img/Cielito.jpg);
+    background-size: cover;
+}
+
+.container img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
