@@ -190,9 +190,30 @@ if (topping === 'oreo' || topping === 'kitkat' || topping === 'brownie' || toppi
 }
 */
 
-//EJERCICIO 10
+/* EJERCICIO 10
+Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar 
+aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente 
+de acuerdo a la opción elegida.
 
-/*
-mod = %
-numero%2==0
-*/
+El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: 
+$4999 MXN
+Carrera $3999 MXN
+Master: $2999 MXN
+Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento correspondiente al precio final.
+Beca Facebook: 20% de descuento.
+Beca Google: 15% de descuento.
+Beca Jesua: 50% de descuento.
+Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el 
+curso elegido, tomando en cuenta las siguientes duraciones:
+Course: 2 meses
+Carrera 6 meses
+Master: 12 meses */
+
+/* EJERCICIO 11
+Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un 
+vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si 
+es “autobús” 0.5.
+Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad 
+de litros consumidos se ha de añadir 10 al total. Considere qué:
+total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. */
