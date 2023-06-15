@@ -195,7 +195,8 @@ Un conocido portal de educación en tecnología está ofreciendo programas para 
 aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente 
 de acuerdo a la opción elegida.
 
-El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: 
+El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: 
+Course: 
 $4999 MXN
 Carrera $3999 MXN
 Master: $2999 MXN
@@ -208,6 +209,53 @@ curso elegido, tomando en cuenta las siguientes duraciones:
 Course: 2 meses
 Carrera 6 meses
 Master: 12 meses */
+
+// Preguntamos al usuario el tipo de programa que desea
+let programa = prompt("¿Qué tipo de programa deseas? (Course, Carrera, Master)");
+
+// Asignamos el costo mensual correspondiente según el programa seleccionado
+let costoMensual;
+if (programa === "Course") {
+  costoMensual = 4999;
+} else if (programa === "Carrera") {
+  costoMensual = 3999;
+} else if (programa === "Master") {
+  costoMensual = 2999;
+} else {
+  alert("Programa no válido");
+}
+
+// Preguntamos al usuario si cuenta con alguna beca
+let beca = prompt("¿Cuenta con alguna beca? (Facebook, Google, Jesua, Ninguna)");
+
+// Asignamos el porcentaje de descuento correspondiente según la beca seleccionada
+let descuento;
+if (beca === "Facebook") {
+  descuento = 0.2;
+} else if (beca === "Google") {
+  descuento = 0.15;
+} else if (beca === "Jesua") {
+  descuento = 0.5;
+} else if (beca === "Ninguna") {
+  descuento = 0;
+} else {
+  alert("Beca no válida");
+}
+
+// Calculamos el precio mensual con descuento y el precio total según la duración del programa
+let precioMensualConDescuento = costoMensual * (1 - descuento);
+let precioTotal;
+if (programa === "Course") {
+  precioTotal = precioMensualConDescuento * 2;
+} else if (programa === "Carrera") {
+  precioTotal = precioMensualConDescuento * 6;
+} else if (programa === "Master") {
+  precioTotal = precioMensualConDescuento * 12;
+}
+
+// Mostramos al usuario el precio mensual con descuento y el precio total
+alert(`El precio mensual con descuento es de $${precioMensualConDescuento} MXN.
+El precio total del programa es de $${precioTotal} MXN.`);
 
 /* EJERCICIO 11
 Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un 
