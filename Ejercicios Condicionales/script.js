@@ -208,7 +208,7 @@ Finalmente, además del precio mensual con descuento, indicar al usuario cuánto
 curso elegido, tomando en cuenta las siguientes duraciones:
 Course: 2 meses
 Carrera 6 meses
-Master: 12 meses */
+Master: 12 meses 
 
 // Preguntamos al usuario el tipo de programa que desea
 let programa = prompt("¿Qué tipo de programa deseas? (Course, Carrera, Master)");
@@ -256,6 +256,7 @@ if (programa === "Course") {
 // Mostramos al usuario el precio mensual con descuento y el precio total
 alert(`El precio mensual con descuento es de $${precioMensualConDescuento} MXN.
 El precio total del programa es de $${precioTotal} MXN.`);
+*/
 
 /* EJERCICIO 11
 Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un 
@@ -264,4 +265,33 @@ Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “mot
 es “autobús” 0.5.
 Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad 
 de litros consumidos se ha de añadir 10 al total. Considere qué:
-total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. */
+total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. 
+
+// Pedimos al usuario que ingrese los datos necesarios
+var tipoVehiculo = prompt("Ingrese el tipo de vehículo (coche, moto o autobús):");
+var kilometrosRecorridos = Number(prompt("Ingrese los kilómetros recorridos:"));
+var litrosConsumidos = Number(prompt("Ingrese los litros consumidos:"));
+
+// Definimos el precio por kilómetro de acuerdo al tipo de vehículo
+var precioPorKilometro;
+if (tipoVehiculo === "coche") {
+  precioPorKilometro = 0.20;
+} else if (tipoVehiculo === "moto") {
+  precioPorKilometro = 0.10;
+} else if (tipoVehiculo === "autobús") {
+  precioPorKilometro = 0.5;
+} else {
+  alert("Tipo de vehículo no válido");
+}
+
+// Calculamos el costo total de acuerdo a la distancia y los litros consumidos
+var costoTotal;
+if (litrosConsumidos <= 100) {
+  costoTotal = (precioPorKilometro * kilometrosRecorridos) + 5;
+} else {
+  costoTotal = (precioPorKilometro * kilometrosRecorridos) + 10;
+}
+
+// Mostramos el resultado al usuario
+alert("El total a pagar es: $" + costoTotal.toFixed(2));   
+*/                          
