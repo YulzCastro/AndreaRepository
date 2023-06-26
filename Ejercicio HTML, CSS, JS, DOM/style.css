@@ -1,0 +1,54 @@
+/* table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+} */
+
+.container {
+	margin: 50px auto;
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+}
+
+input, select {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+	margin: 10px;
+}
+
+table {
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+tfoot th, tfoot td {
+	border-top: 2px solid #007bff;
+	font-weight: bold;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 24px;
+}

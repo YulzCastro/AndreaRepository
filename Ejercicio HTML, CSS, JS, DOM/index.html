@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio HTML, CSS, DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Ventas de Perfumes</h1>
+		<form id="ventas-form">
+			<div>
+				<label for="vendedor">Vendedor:</label>
+				<select id="vendedor" name="vendedor">
+					<option value="juana">Juana</option>
+					<option value="pedro">Pedro</option>
+				</select>
+			</div>
+			<div>
+				<label for="producto">Producto:</label>
+				<select id="producto" name="producto">
+					<option value="aqua">Aqua</option>
+					<option value="emocion">Emoción</option>
+					<option value="alegria">Alegría</option>
+					<option value="frescura">Frescura</option>
+				</select>
+			</div>
+			<div>
+				<label for="cantidad">Cantidad:</label>
+				<input type="text" id="cantidad" name="cantidad">
+			</div>
+			<button type="submit">Agregar venta</button>
+		</form>
+		<div>
+			<h2>Ventas de Juana</h2>
+			<table id="juana-ventas">
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Cantidad</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="2">Total de ventas:</th>
+						<td id="juana-total"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div>
+			<h2>Ventas de Pedro</h2>
+			<table id="pedro-ventas">
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Cantidad</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="2">Total de ventas:</th>
+						<td id="pedro-total"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<button id="empleado-mes">Calcular empleado del mes</button>
+		<p id="resultado"></p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
